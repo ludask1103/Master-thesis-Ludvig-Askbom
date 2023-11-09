@@ -28,4 +28,19 @@ The datasets extracted from the road comprised one using grey level run-length m
 
 # Deep Learning Method
 
-This method consisted of fine-tuning a convolutional neural network and a vision transformer. This section only presents results from fine-tuning the vision transformer.
+This method consisted of fine-tuning a convolutional neural network and a vision transformer. The vision transformer was fine-tuned using ca. 9000 images annotated by me. This section only presents results from fine-tuning the vision transformer. First is shown the evolution of the training and test loss during fine-tuning along with the resulting confusion matrix. The achieved accuracy was 87.9%. <br>
+
+<p align="center">
+<img src="images/snow_ViT_loss-1.png" width="400" height="300">
+</p>
+
+<p align="center">
+<img src="images/snow_ViT_conf.png" width="400" height="300">
+</p>
+
+<br>
+In a real-world implementation, reporting classifications with an associated probability above a certain threshold is only relevant. To determine a good threshold it is of interest to look at the distributions of the predicted probabilities when the model is correct and incorrect. The following image shows these distributions with correct predictions to the right and incorrect predictions to the left. We can determine that a threshold of 80% could be suitable in this case since most correct predictions will be reported and most incorrect predictions will be disregarded.
+
+<p align="center">
+<img src="images/snow_ViT_probs-1.png" width="500" height="300">
+</p>
