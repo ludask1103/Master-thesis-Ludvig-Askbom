@@ -1,7 +1,10 @@
-# Master-thesis-Ludvig-Askbom
+# Master's Thesis Results
 
-<img src="images/segmentation_ex-1.png" width="400" height="300">
+<p align="center">
+<img src="images/seg_loss-1.png" width="400" height="300">
+</p>
 
-![plot](images/seg_loss-1.png)
-![plot](images/segmentation_ex-1.png)
+<p align="center>
+<img src="images/segmentation_ex-1.png" width="600" height="400">
+</p>
 
